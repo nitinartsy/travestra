@@ -1,0 +1,36 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap'); */
+
+svg {
+    border: 1px solid red;
+  }
+  
+  .main {
+    padding: 0 5% 0 5%;
+  }
+  
+  .stages {
+    opacity: 0;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .stage {
+    padding: 8px 8px 8px 0;
+    width: 25%;
+    height: 180px;
+    /* background: #1d1d1d; */
+  }
+  
+  .heading {
+    /* background: green; */
+    height: 30px;
+    padding-top: 2px;
+    overflow: hidden;
+  }
+  
+  .heading span {
+    font-size: 24px;
+    display: block;
+  }
+  

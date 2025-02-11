@@ -1,0 +1,145 @@
+.HeroSection {
+    height: 100%;
+    display: flex;
+    max-width: 1120px;
+    /* align-items: flex-start; */
+    margin-bottom: 147px;
+    justify-content: space-between;
+    padding-top: 525px;
+}
+
+
+
+.HeroSectionpart1 p {
+    width: 479px;
+    height: 81px;
+    margin-top: 33px;
+    margin-left: 91px;
+    font-family: Test SÃ¶hne;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26.52px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Container for the main content */
+.container {
+    max-width: 1017px;
+    margin: auto;
+}
+
+
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.split {
+    font-size: 250px !important;
+    color: #50B281;
+    font-weight: 500;
+    margin-bottom: -40px;
+    margin-top: -40px;
+}
+
+.HeroSectionpart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.VectorContainer {
+    margin-right: 20px;
+}
+
+
+.HeroSectionpart2 p {
+    font-size: 26px;
+    font-weight: 400px;
+}
+
+.accordionOptions {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+
+.accordionOptions li {
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+
+
+.accordionOptions li {
+    text-align: left;
+}
+
+
+
+.accordion_inner_container {
+    margin-top: 75px;
+}
+
+.accordionOptions {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+
+.optionButton {
+    cursor: pointer;
+    padding: 12px 20px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    color: #bbb;
+}
+
+/* Active Option Animation */
+.activeOption {
+    /* background: linear-gradient(135deg, rgba(255, 140, 0, 0.7), rgba(255, 69, 0, 0.7)); */
+    color: white;
+    transform: translateX(5px) scale(1.05);
+    /* box-shadow: 0px 0px 15px rgba(255, 140, 0, 0.6); */
+}
+
+/* Sliding Indicator */
+.activeOption::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background: white;
+    animation: slideIndicator 0.4s ease-in-out forwards;
+}
+
+@keyframes slideIndicator {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}

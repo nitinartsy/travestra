@@ -1,0 +1,34 @@
+
+.accordion_item_main {
+
+    border-bottom: 1px solid #767676
+}
+
+.accordion_item_inner {
+    display: flex;
+    padding: 26px 5px;
+    justify-content: space-between;
+
+}
+
+.accordion_count_content {
+    display: flex;
+    align-items: center;
+    gap: 35px; 
+}
+
+.content_accordion {
+    padding: 17px 0px 37px;
+    margin-left: 55px;
+    font-size: 16px;
+}
+
+.count {
+    font-size: 20px;
+    color: #50B281;
+}
+
+.title {
+    font-size: 20px;
+}
+

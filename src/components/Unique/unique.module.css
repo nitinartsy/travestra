@@ -1,0 +1,191 @@
+.container {
+    max-width: 1017px;
+    margin: 105px auto;
+
+}
+
+.heading {
+    /* width: 1217px; */
+    /* height: 340px; */
+    /* top: 2124px; */
+}
+
+.heading h1 {
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 169.73px;
+    letter-spacing: 0%;
+    color: rgba(80, 178, 129, 1);
+}
+
+.TimeLineBar {}
+
+.TimeLineBarHead h1 {
+
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 169.73px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(80, 178, 129, 1);
+}
+
+.TimeLineBarmain {
+    /* border: 1px solid green; */
+    display: flex;
+    /* height: 100vh; */
+    /* width: 100vw; */
+    margin-top: 100px;
+
+}
+
+
+.TimeLineBarEllipse {
+    width: 30px;
+    height: auto;
+    margin-left: 20px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.EllipseActive {
+    
+}
+
+
+.TimeLineBarEllipse .EllipseActive {
+    width: 18px;
+    height: 18px;
+    z-index: 232132213;
+    position: relative;
+    margin-left: -2px;
+    background: #50B281;
+    border-radius: 100px;
+}
+
+.TimeLineBarEllipse .Ellipse {
+    width: 18px;
+    height: 18px;
+    z-index: 232132213;
+    position: relative;
+    margin-left: -2px;
+    background: #767676 !important;
+    border-radius: 100px;
+}
+
+.TimeLineBarEllipse div:nth-child(2) {
+    margin-top: 450px;
+}
+
+.TimeLineBarEllipse div:nth-child(3) {
+    margin-top: 100px;
+}
+
+.TimeLineBarEllipse div:nth-child(4) {
+    margin-top: 110px;
+}
+
+.TimeLineBarEllipse div:nth-child(5) {
+    margin-top: 90px;
+}
+
+.TimeLineBarEllipse div:nth-child(6) {
+    margin-top: 105px;
+}
+
+.verticalline {
+    height: 980px;
+    border: 1px solid rgba(118, 118, 118, 1);
+    margin-left: -22px;
+}
+
+.TimeLineBarParagraph {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    top: 2194px;
+    margin-left: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.TimeLineBarParagraph:nth-child(2) {
+    margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(3) {
+    margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(4) {
+    margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(5) {
+    margin-top: 40px;
+}
+
+.TimeLineBarParagraph:nth-child(6) {
+    margin-top: 40px;
+
+}
+
+.TimeLineBarParagraph:nth-child(7) {
+    margin-top: 40px;
+}
+
+.TimeLineBarImg {
+    width: 435px;
+    height: 334px;
+    top: 2661px;
+    margin-left: 60px;
+
+}
+
+.TimeLineBarParagraph div {
+    /* width: 285px; */
+    height: 64px;
+    top: 2194px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.TimeLineBarParagraph1st {
+    /* width: 285px; */
+    height: 64px;
+    text-align: left;
+}
+
+.TimeLineBarParagraph1st p {
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31.82px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #767676;
+}
+
+.TimeLineBarParagraph2nd {
+    margin-left: 145px;
+    width: 420px;
+    height: 63px;
+    text-align: left;
+}
+
+.TimeLineBarParagraph2nd p {
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.22px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #767676;
+}
+
+
+.timeline_active p {
+    color: white;
+}

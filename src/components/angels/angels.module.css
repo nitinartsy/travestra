@@ -1,0 +1,461 @@
+.container {
+  height: 300vh;
+  /* width: 100vw; */
+  /* background: #000; */
+  max-width: 1017px;
+  margin: auto;
+  margin-top: 95px;
+}
+
+.heading {
+  width: 779px;
+  height: 72px;
+}
+
+.heading h1 {
+  line-height: 169.73px;
+  letter-spacing: 0%;
+  color: rgba(80, 178, 129, 1);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 71.68px;
+  letter-spacing: 0%;
+}
+
+
+.TimeLineBar {
+  /* width: 100vw; */
+}
+
+.TimeLineBarHead {
+  margin-left: 250px;
+  width: 1217px;
+  height: 170px;
+  /* border: 1px solid red; */
+}
+
+.TimeLineBarHead h1 {
+
+  font-size: 128px;
+  font-weight: 500;
+  line-height: 169.73px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(80, 178, 129, 1);
+}
+
+.TimeLineBarmain {
+  /* border: 1px solid green; */
+  display: flex;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  margin-top: 100px;
+}
+
+
+.TimeLineBarEllipse {
+  width: 30px;
+  height: auto;
+  margin-left: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.TimeLineBarCount {
+  width: 75px;
+  height: auto;
+  /* top: 2194px; */
+
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+
+
+.TimeLineBarEllipse .EllipseActive {
+  width: 18px;
+  height: 18px;
+  z-index: 232132213;
+  position: relative;
+  margin-left: -5px;
+  background: #50B281;
+  border-radius: 100px;
+
+}
+
+.TimeLineBarEllipse .Ellipse {
+  width: 18px;
+  height: 18px;
+  z-index: 232132213;
+  position: relative;
+  margin-left: -5px;
+  background: #767676 !important;
+  border-radius: 100px;
+}
+
+
+
+
+.TimeLineBarCount div p {
+  width: 25px;
+  height: 27px;
+  color: rgba(80, 178, 129, 1);
+  /* font-family: Test Söhne; */
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.TimeLineBarCount div:nth-child(2) {
+  margin-top: 100px;
+}
+
+.TimeLineBarCount div:nth-child(3) {
+  margin-top: 100px;
+}
+
+.TimeLineBarCount div:nth-child(4) {
+  margin-top: 100px;
+}
+
+.TimeLineBarCount div:nth-child(5) {
+  margin-top: 100px;
+}
+
+.TimeLineBarCount div:nth-child(6) {
+  margin-top: 100px;
+}
+
+.TimeLineBarEllipse {
+  width: 30px;
+  height: auto;
+  /* top: 2194px; */
+  margin-left: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.TimeLineBarEllipse div img {
+  width: 18px;
+  height: 18px;
+  /* top: 2199px; */
+}
+
+.TimeLineBarEllipse div:nth-child(2) {
+  margin-top: 110px;
+
+}
+
+.TimeLineBarEllipse div:nth-child(3) {
+  margin-top: 100px;
+}
+
+.TimeLineBarEllipse div:nth-child(4) {
+  margin-top: 110px;
+}
+
+.TimeLineBarEllipse div:nth-child(5) {
+  margin-top: 105px;
+}
+
+.TimeLineBarEllipse div:nth-child(6) {
+  margin-top: 100px;
+}
+
+.verticalline {
+  /* width: 1px;  */
+  height: 650px;
+  border: 1px solid rgba(118, 118, 118, 1);
+  margin-left: -22px;
+}
+
+.TimeLineBarParagraph {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  top: 2194px;
+  margin-left: 60px;
+  gap: 0px;
+  opacity: 0px;
+  justify-content: space-between;
+}
+
+.TimeLineBarParagraph:nth-child(2) {
+  margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(3) {
+  margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(4) {
+  margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(5) {
+  margin-top: 40px;
+}
+
+.TimeLineBarParagraph:nth-child(6) {
+  margin-top: 40px;
+}
+
+.TimeLineBarParagraph div {
+  /* width: 285px; */
+  height: 64px;
+  top: 2194px;
+  /* border: 1px solid red; */
+  gap: 0px;
+  opacity: 0px;
+}
+
+.TimeLineBarParagraphActive1 {
+  color: white !important;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 31.82px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+
+.TimeLineBarParagraphActive2 {
+  color: white !important;
+  /* font-family: Test Söhne; */
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21.22px;
+  letter-spacing: 0%;
+  margin-left: 145px;
+  width: 480px;
+  height: 63px;
+  text-align: left;
+}
+
+
+.TimeLineBarParagraph1st {
+  width: 285px;
+  height: 64px;
+  text-align: left;
+  /* border: 1px solid red; */
+}
+
+.TimeLineBarParagraph1st p {
+  /* font-family: Test Söhne; */
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 31.82px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #767676;
+}
+
+
+
+
+
+.TimeLineBarParagraph2nd {
+
+
+  margin-left: 145px;
+
+
+  width: 420px;
+  height: 63px;
+
+  text-align: left;
+
+}
+
+.TimeLineBarParagraph2nd p {
+  /* font-family: Test Söhne; */
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.22px;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #767676;
+}
+
+
+/* ----------------------------------- */
+
+
+.heading2 {
+  width: 484px;
+  height: 85px;
+  /* border: 1px solid red; */
+  /* margin-left: 246px; */
+  margin-top: 114px;
+}
+
+.heading2 h1 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 84.86px;
+  color: rgba(80, 178, 129, 1);
+}
+
+/* ---------------------------------------- */
+
+.container1 {
+  display: flex;
+  align-items: end;
+  margin-top: 95px;
+  justify-content: space-between;
+}
+
+.imageContainer img {
+  width: 371px;
+  height: 257px;
+  /* margin-left: 230px; */
+}
+
+.textContainer p:nth-child(1) {
+  width: 256;
+  height: 27;
+  margin-left: 39px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+  color: rgba(80, 178, 129, 1);
+
+}
+
+.textContainer p:nth-child(2) {
+  width: 256px;
+  height: 27px;
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+  margin-top: 18px;
+  margin-left: 39px;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.textContainer p:nth-child(3) {
+  margin-left: 39px;
+  width: 256px;
+  height: 27px;
+  margin-top: 22px;
+  width: 241px;
+  height: 42px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21.22px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.description p {
+  font-size: 14px;
+  color: #666;
+}
+
+.textContainer p:nth-child(3) {
+  width: 241px;
+  height: 42px;
+  margin-top: 40px;
+}
+
+.line2 {
+  margin-top: 28px;
+  /* margin-left: 245px; */
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.container2 {
+  display: flex;
+  align-items: end;
+  margin-top: 15px;
+  /* margin-left: 210px; */
+  justify-content: space-between;
+}
+
+
+.HeroSection {
+  max-width: 1017px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 361px;
+  margin-bottom: 35px;
+}
+
+.HeroSectionpart1 {}
+
+.HeroSectionpart1 h1 {
+  margin-bottom: 35px;
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 47.74px;
+  letter-spacing: 0%;
+
+}
+
+.heroDescription {
+  /* font-family: Test Söhne; */
+  /* font-weight: 400; */
+  font-size: 36px;
+  line-height: 47.74px;
+  letter-spacing: 0%;
+}
+
+
+.HeroSectionpart2 {}
+
+.VectorContainer {}
+
+
+.for_text_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1017px;
+  margin: auto;
+  margin-bottom: -75px;
+}
+
+.for_text_section h1 {
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 331.5px;
+  letter-spacing: 0%;
+  margin-left: -130px;
+  color: #50B281;
+}
+
+.for_text_section p {
+  width: 42%;
+  /* font-family: Test Söhne; */
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+
+}
+
+
+.Logo h1 {
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 331.5px;
+  letter-spacing: 0%;
+  /* margin-left: 10px; */
+  color: #50B281;
+  position: relative;
+  left: 0px;
+}

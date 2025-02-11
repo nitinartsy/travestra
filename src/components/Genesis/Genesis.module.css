@@ -1,0 +1,208 @@
+.container {
+    color: black;
+    /* height: auto; */
+    /* width: 100vw; */
+    /* background: #000; */
+    color: rgba(230, 230, 230, 1);
+    max-width: 1017px;
+    margin: 96px auto;
+
+}
+
+.container1st {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.container1st div:nth-child(1) {
+    height: auto;
+
+}
+
+.heading {
+    height: 254px;
+    top: 1024px;
+
+    /* border: 1px solid red; */
+    color: rgba(80, 178, 129, 1);
+
+}
+
+.heading h1 {
+    /* font-family: Test Söhne; */
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 127.3px;
+    letter-spacing: 0%;
+    width: 660px;
+}
+
+.paragraph1 {
+    width: 564px;
+    height: 189px;
+    top: 1344px;
+    /* border: 1px solid red; */
+}
+
+.paragraph1 p {
+    /* font-family: Test Söhne; */
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 26.52px;
+    letter-spacing: 0%;
+}
+
+.paragraph2 {
+    width: 564px;
+    height: 81px;
+    top: 1557px;
+
+}
+
+.paragraph2 p {
+    font-family: Test Söhne;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26.52px;
+    letter-spacing: 0%;
+
+}
+
+.container1stIMG img {
+    width: 320px;
+    height: 374px;
+    top: 1213px;
+    margin-left: 47px;
+    margin-top: 189px;
+}
+
+.container2nd {
+    width: 100vw;
+}
+
+.container2ndParagraph1 {
+    width: 830px;
+    height: 108px;
+
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+}
+
+.PCount {
+    width: 24;
+    height: 27;
+    color: rgba(80, 178, 129, 1);
+
+}
+
+.PCount p {
+    font-family: Test Söhne;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.52px;
+    letter-spacing: 0%;
+
+}
+
+.container2ndParagraph1 :nth-child(2) p {
+    padding-left: 39px;
+    width: 854;
+    height: 108;
+    /* font-family: Test Söhne; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.52px;
+    letter-spacing: 0%;
+
+
+}
+
+.finalText {
+    width: 854px;
+    height: 54px;
+    top: 1967px;
+
+
+}
+
+.finalText p {
+    /* font-family: Test Söhne; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.52px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+
+
+}
+
+
+.container1st_img {
+    width: 320px;
+    height: 374px;
+    background: white;
+    margin-top: -135px;
+}
+
+
+.container_one_sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 66px;
+    margin-bottom: 24px;
+}
+
+.prgph2 {
+    margin-top: 24px;
+}
+
+.HeroSection {
+    display: flex;
+    justify-content: flex-end;
+    gap: 67px;
+    max-width: 1017px;
+    margin: auto;
+}
+
+.HeroSectionpart1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 73%;
+    gap: 67px;
+}
+
+.HeroSectionpart1 img {
+    width: 264px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 50px;
+
+}
+
+.HeroSectionpart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.free {
+    margin-top: 145px;
+}
+
+
+.Logo h1 {
+    font-size: 216px;
+    text-transform: uppercase;
+    color: #50B281;
+    font-weight: 500;
+}
+
+
+.VectorContainer {
+    margin-bottom: 47px;
+    margin-right: 27px;
+}

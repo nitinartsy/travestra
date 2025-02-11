@@ -1,0 +1,139 @@
+.timelineContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f500;
+    background-image: url(/Bgimg3.svg);
+    background-attachment: fixed;
+    /* Keeps the background fixed */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    font-family: "Arial", sans-serif;
+    position: relative;
+}
+
+
+.staticT {
+    width: 18px;
+    height: 100%;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 990px;
+}
+
+.timelineItem {
+    /* background-color: white; */
+    padding: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 416px;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #E6E6E6;
+}
+
+.timelineItem h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.timelineItem p {
+    font-size: 16px;
+    color: #555;
+}
+
+.timelineItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.timelineItemRight {
+    margin-left: 50%;
+}
+
+.timelineItemLeft {
+    margin-right: 50%;
+}
+
+
+.split {
+    font-size: 118px;
+    font-weight: 500;
+    line-height: 169.73px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    color: rgba(80, 178, 129, 1);
+    /* position: fixed; */
+    top: 150px;
+    /* left: 0; */
+    /* z-index: 1; */
+    width: 1158px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*  */
+
+
+.Logo_text {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 200px;
+}
+
+.heroDescription {
+    width: 410px;
+    margin: 40px 180px;
+}
+
+.timelineItem {
+    position: relative;
+}
+
+
+.timelineItem h4{
+    margin: 20px 0px;
+    font-size: 24px;
+}
+
+
+.timelineItem h4:nth-child(1){
+    margin-top: 0px;
+}
+
+
+.poclr {
+    color: #50B281;
+    font-size: 24px;
+}
+
+.timelineItem p {
+    color: #ffffff;
+}
