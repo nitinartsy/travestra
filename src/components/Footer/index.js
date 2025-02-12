@@ -1,28 +1,69 @@
-import React from 'react'
+import { useEffect, useRef, useState } from "react";
 import styles from './footer.module.css'
+import StartIcon from "@/icons/StartIcon";
+import { useRouter } from "next/router";
 
-const Footer = () => {
+const Footer = ({Ref}) => {
+    const router = useRouter();
+    const footerRef = useRef(null);
+    const [isFixedfooter, setIsFixedfooter] = useState(false);
+    const [initialfooterTop, setInitialfooterTop] = useState(0);
+    const offset = 100; // Adjust this value to control when it becomes fixed
+
+    useEffect(() => {
+        if (footerRef.current) {
+            setInitialfooterTop(footerRef.current.offsetTop);
+        }
+
+        const handleScroll = () => {
+            if (window.scrollY >= initialfooterTop + offset) {
+                setIsFixedfooter(true);
+            } else {
+                setIsFixedfooter(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [initialfooterTop]);
+
+
+
+
+
+    const handleAngel = () => {
+        router.push('/for_angels')
+    }
+    const handleFounders = () => {
+        router.push('/for_founders')
+    }
+
+
+    const handletandc = () => {
+        router.push('/terms&condition')
+    }
+
+
+      const handleContact = () => {
+        router.push('/contact')
+    }
+
     return (
         <>
-            <div className={styles.footer_main_container}>
+            <div   className={`${styles.footer_main_container} ${isFixedfooter ? styles.fixd : ""} `}>
                 <div className={styles.Footer_links}>
                     <ul className={styles.star_clasMain}>
-                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8.63867" y="0.75" width="1.72222" height="17.5" fill="#50B281" stroke="#50B281" stroke-width="0.5" />
-                            <rect x="18.25" y="8.52777" width="1.72222" height="17.5" transform="rotate(90 18.25 8.52777)" fill="#50B281" stroke="#50B281" stroke-width="0.5" />
-                            <rect x="2.70406" y="3.69946" width="1.72222" height="17.5" transform="rotate(-45 2.70406 3.69946)" fill="#50B281" stroke="#50B281" stroke-width="0.5" />
-                            <rect x="3.92188" y="16.0738" width="1.72222" height="17.5" transform="rotate(-135 3.92188 16.0738)" fill="#50B281" stroke="#50B281" stroke-width="0.5" />
-                        </svg>
+                        <StartIcon/>
                         <li className={styles["star_clas"]}>Book a call</li>
                     </ul>
                     <ul>
-                        <li>Founders</li>
-                        <li>Angels</li>
+                        <li onClick={handleFounders}>Founders</li>
+                        <li onClick={handleAngel} >Angels</li>
                     </ul>
                     <ul>
-                        <li>Contact</li>
-                        <li>Privacy</li>
-                        <li>Terms & Conditions</li>
+                        <li onClick={handleContact} >Contact</li>
+                        <li >Privacy</li>
+                        <li onClick={handletandc}>Terms & Conditions</li>
                     </ul>
                 </div>
                 <div className={styles.Footer_text}>

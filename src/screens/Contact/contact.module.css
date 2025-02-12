@@ -1,0 +1,188 @@
+.HeroSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 75px;
+    max-width: 1017px;
+    margin: auto;
+
+}
+
+.HeroSectionpart1 {
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 100%;
+
+
+
+}
+
+.HeroSectionpart2 {
+    /* border: 1px solid green; */
+    /* height: 100%;
+      width: 100%; */
+}
+
+.heroImage {
+    /* position: absolute; */
+    width: 464px;
+    height: 280px;
+    margin-top: -9px;
+    margin-left: 9px;
+    gap: 0px;
+}
+
+.HeroSectionpart1 h1 {
+    /* position: absolute; */
+    /* position: relative; */
+    font-family: Test SÃ¶hne;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47.74px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+    width: 306px;
+    height: 48px;
+    margin-top: 21px;
+    margin-left: 90px;
+}
+
+.HeroSectionpart1 p {
+    width: 479px;
+    height: 81px;
+    margin-top: 33px;
+    /* margin-left: 91px; */
+    /* font-family: Test SÃ¶hne; */
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26.52px;
+    text-align: left;
+    text-underline-position: from-font;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.VectorContainer {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 60px; */
+    margin-bottom: -60px;
+}
+
+
+.VideoLogo {
+    width: 26px;
+    height: 26px;
+    top: 10px;
+    left: 31px;
+}
+
+.Vector {}
+
+.HeroSectionpart2 button {
+    border: none;
+    width: 186px;
+    height: 46px;
+    margin-top: 10px;
+    /* margin-left: 1079px; */
+    padding: 10px 31px 10px 31px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+
+    background: rgba(80, 178, 129, 1);
+    color: rgba(40, 43, 40, 1);
+    font-family: Test SÃ¶hne;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21.22px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+
+/* .free{
+      height: 900px;
+      width: 100vw;
+      border: 1px solid red;
+    } */
+
+.Logo {
+    width: 1827px;
+    height: 243px;
+
+    color: rgba(80, 178, 129, 1);
+    font-size: 100px;
+    /* padding-left: 45px; */
+    overflow: hidden;
+
+    margin-top: 90px;
+}
+
+
+
+.splitP {
+    text-transform: uppercase;
+}
+
+.heroDescription {}
+
+
+
+
+
+
+.free {
+    margin-top: 60px;
+    background-image: url(/BGcontact.svg);
+    background-repeat: no-repeat;
+    /* width: 500px; */
+    height: auto;
+    background-attachment: fixed;
+    /* margin-top: 150px; */
+    /* background-position: center center;  */
+    background-position: fixed;
+}
+
+
+
+.contact_info {
+    max-width: 1017px;
+    margin: auto;
+    display: flex;
+    padding-top: 41px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 153px;
+}
+
+
+.contact_info div {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    align-items: flex-start;
+}
+
+.contact_info div p {
+    /* font-family: Test Söhne; */
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26.52px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}

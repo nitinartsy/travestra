@@ -37,3 +37,31 @@
     right: -20px;
     top: -16px;
 }
+
+
+
+
+
+
+/* 
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.BackendbyHead {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} */

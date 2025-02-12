@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./home.module.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Dynamically import GSAP and SplitType to avoid SSR issues
 let gsap, ScrollTrigger, SplitType;
@@ -15,6 +15,11 @@ if (typeof window !== "undefined") {
 export default function Home() {
     const descriptionRef = useRef(null);
     const logoRef = useRef(null);
+    const sectionRef = useRef(null);
+    const sectionBRef = useRef(null);
+    const [isFixed, setIsFixed] = useState(false);
+
+    // postion fixed end
 
     useEffect(() => {
         // Ensure code runs only on the client side
@@ -56,6 +61,46 @@ export default function Home() {
             ScrollTrigger.refresh();
         }
     }, []);
+
+    // useEffect(() => {
+    //     if (sectionRef.current) {
+    //         setInitialTop(sectionRef.current.offsetTop); // Store initial position
+    //     }
+
+    //     const handleScroll = () => {
+    //         if (window.scrollY >= initialTop) {
+    //             setIsFixed(true);
+    //         } else {
+    //             setIsFixed(false);
+    //         }
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => window.removeEventListener("scroll", handleScroll);
+    // }, [initialTop]);
+
+
+
+    useEffect(() => {
+        if (!sectionRef.current || !sectionBRef.current) return;
+
+        const initialTop = sectionRef.current.offsetTop;
+        const stopFixedTop = sectionBRef.current.offsetTop;
+
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+
+            if (scrollY >= initialTop && scrollY < stopFixedTop) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
 
     const imageGridData = [
         [
@@ -249,15 +294,16 @@ export default function Home() {
                     </div>
                 </div> */}
             </div>
-              <div className={styles.BackendbyHead}>
-                    <h1>Backed by</h1>
-                </div>
+
 
             {/* -------------BackedBy Section--------------------------------------------------------------------------------------------------------------------------------- */}
             <div className={styles.Backendby}>
                 {/* <div className={styles.BackendbyHead}>
                     <h1>Backed by</h1>
                 </div> */}
+                <div ref={sectionRef} className={`${styles.BackendbyHead} ${isFixed ? styles.fixed : ""}`}>
+                    <h1>Backed by</h1>
+                </div>
                 <div className={styles.galleryBody}>
                     <div className={styles.gallery}>
                         {imageGridData.map((row, rowIndex) => (
@@ -277,23 +323,12 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-                {/* <div className={styles.gallery}>
-                    {imageData.map((item, index) => (
-                        <div
-                            key={index}
-                            className={`${styles.row} ${index % 5 === 0 || index % 5 === 2 ? styles.threeRow : styles.twoRow}`}
-                        >
-                            <div className={styles.card}>
-                                <img src={item.src} alt="Profile" className={styles.image} />
-                                <div className={styles.name}>{item.name}</div>
-                            </div>
-                        </div>
-                    ))}
+                <div className={styles.hidebackedBy} ref={sectionBRef}>
+                </div>
 
-                </div> */}
             </div>
         </div>
-       
+
 
     );
 }

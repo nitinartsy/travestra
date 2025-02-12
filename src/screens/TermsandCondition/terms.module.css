@@ -1,0 +1,35 @@
+.terms_main_container {
+    margin-top: 60px;
+    background-image: url(/BGtnc.svg);
+    background-repeat: no-repeat;
+    /* width: 500px; */
+    height: auto;
+    background-attachment: fixed;
+    /* margin-top: 150px; */
+    /* background-position: center center; */
+    background-position: fixed;
+    /* border: 2px solid red; */
+
+}
+
+
+.Logo {
+    padding-top: 119px;
+    /* font-family: Test Söhne; */
+    /* font-weight: 400; */
+    font-size: 87px;
+    color: #50B281;
+
+}
+
+
+.terms_main_container P {
+    max-width: 1017px;
+    margin: 70px auto;
+    /* font-family: Test Söhne; */
+font-weight: 300;
+font-size: 16px;
+line-height: 21.22px;
+letter-spacing: 0%;
+
+}

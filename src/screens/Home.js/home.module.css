@@ -585,6 +585,7 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 140px;
+  position: relative;
 }
 
 
@@ -619,3 +620,36 @@
 
 .imageGri2 {}
 
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.BackendbyHead {
+  /* background-color: white; */
+  padding: 15px;
+  width: 100%;
+
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  /* border: 2px solid red; */
+  left: 267px;
+  width: 100%;
+  margin: auto;
+  /* max-width: 767px; */
+  z-index: 0;
+  /* background-color: white; */
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  transition: all 30000s ease-in-out;
+
+}
+
+
+
+.hidebackedBy {
+  padding-top: 300px;
+}
