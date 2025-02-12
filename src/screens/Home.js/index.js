@@ -2,8 +2,10 @@ import Image from "next/image";
 import styles from "./home.module.css";
 import { useEffect, useRef } from "react";
 
-// Dynamically import GSAP and SplitType to avoid SSR issues
+
 let gsap, ScrollTrigger, SplitType;
+
+
 
 if (typeof window !== "undefined") {
     gsap = require("gsap").default;
@@ -15,6 +17,36 @@ if (typeof window !== "undefined") {
 export default function Home() {
     const descriptionRef = useRef(null);
     const logoRef = useRef(null);
+
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+     
+      ScrollTrigger.create({
+        trigger: containerRef.current,
+        start: "35% 60%", // Element ka 25% point, viewport ke 70% point par trigger hoga
+        end: "80% 20%",
+        // markers:true,
+        end: "+=900", 
+        pin: true, 
+        scrub: 5,
+      });
+
+      const elements = gsap.utils.toArray(`.${styles.CohortGraph1}`);
+    
+      elements.forEach((el) => {
+        
+        ScrollTrigger.create({
+          trigger: el,
+          start: "50% 5%",
+          toggleActions: "play none none reverse",
+          scrub: 5,
+          onEnter: () => el.classList.add(styles.active),  
+          onLeaveBack: () => el.classList.remove(styles.active) 
+        });
+      });
+
+    }, []);
 
     useEffect(() => {
         // Ensure code runs only on the client side
@@ -222,13 +254,13 @@ export default function Home() {
             </div>
             {/* -------------ForSection end--------------------------------------------------------------------------------------------------------------------------------- */}
 
-            <div className={styles.midSection}>
+            <div ref={containerRef} className={styles.midSection}>
                 {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
-                <div className={styles.Cohort}>
+                <div  className={styles.Cohort}>
                     <div className={styles.CohortBTN}>
                         <button>Know more</button>
                     </div>
-                    <div className={styles.CohortGraph}>
+                    <div  className={styles.CohortGraph}>
                         {[...Array(4)].map((_, index) => (
                             <div key={index} className={styles.CohortGraph1}>
                                 <div className={styles.CohortGraphText}>Fund & Launch</div>
