@@ -619,3 +619,52 @@
 
 .imageGri2 {}
 
+
+
+
+
+/* fixedddd */
+
+.ForSectionfull {
+  /* background-color: white; */
+  padding: 15px;
+  width: 100%;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+   background-color: #292b28; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* stepper */
+.CohortGraph {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.CohortGraph1 {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.active {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background: #d1e7ff;
+}
+

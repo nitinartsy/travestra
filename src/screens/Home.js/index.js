@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./home.module.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Dynamically import GSAP and SplitType to avoid SSR issues
 let gsap, ScrollTrigger, SplitType;
@@ -15,6 +15,17 @@ if (typeof window !== "undefined") {
 export default function Home() {
     const descriptionRef = useRef(null);
     const logoRef = useRef(null);
+
+
+    const sectionRef = useRef(null);
+    const [isFixed, setIsFixed] = useState(false);
+    const [initialTop, setInitialTop] = useState(0);
+
+
+
+    const [activeIndex, setActiveIndex] = useState(0);
+    const prevScrollY = useRef(0);
+    const isScrolling = useRef(false);
 
     useEffect(() => {
         // Ensure code runs only on the client side
@@ -55,6 +66,45 @@ export default function Home() {
             // Refresh ScrollTrigger on component mount
             ScrollTrigger.refresh();
         }
+    }, []);
+
+
+    useEffect(() => {
+        if (sectionRef.current) {
+            setInitialTop(sectionRef.current.offsetTop); // Store initial position
+        }
+
+        const handleScroll = () => {
+            if (window.scrollY >= initialTop) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [initialTop]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (isScrolling.current) return; // Prevents multiple fast updates
+            isScrolling.current = true;
+
+            const scrollY = window.scrollY || document.documentElement.scrollTop;
+            const direction = scrollY > prevScrollY.current ? 1 : -1; // ⬆ Up = +1, ⬇ Down = -1
+            prevScrollY.current = scrollY;
+
+            setActiveIndex((prevIndex) => {
+                let newIndex = prevIndex + direction;
+                return Math.max(0, Math.min(newIndex, 3)); // Ensures index stays within bounds [0, 3]
+            });
+
+            setTimeout(() => (isScrolling.current = false), 10000); // Delay for smoother stepper effect
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     const imageGridData = [
@@ -200,58 +250,69 @@ export default function Home() {
             </div>
 
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
-            <div className={styles.ForSection}>
-                <div className={styles.ForSection1Navbar}>
-                    <div>
-                        <p>For Founders</p>
-                    </div>
-                    <div>
-                        <p>For Angels</p>
-                    </div>
-                </div>
-                <div className={styles.ForSection1}>
-                    <div className={styles.ForSection1Discription}>
-                        <p>
-                            Join Tavastra's immersive 3-month residency program. Master startup essentials with expert mentorship and a structured curriculum, build your MVP with full-stack support, and connect with investors. Plus, a monthly stipend to fuel your focus.
-                        </p>
-                    </div>
-                    <div className={styles.ForSection2}>
-                        <h1>For Founders</h1>
-                    </div>
-                </div>
-            </div>
-            {/* -------------ForSection end--------------------------------------------------------------------------------------------------------------------------------- */}
 
-            <div className={styles.midSection}>
-                {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
-                <div className={styles.Cohort}>
-                    <div className={styles.CohortBTN}>
-                        <button>Know more</button>
+            <div ref={sectionRef} className={`${styles.ForSectionfull} ${isFixed ? styles.fixed : ""}`}>
+                <div className={styles.ForSection}>
+                    <div className={styles.ForSection1Navbar}>
+                        <div>
+                            <p>For Founders</p>
+                        </div>
+                        <div>
+                            <p>For Angels</p>
+                        </div>
                     </div>
-                    <div className={styles.CohortGraph}>
-                        {[...Array(4)].map((_, index) => (
-                            <div key={index} className={styles.CohortGraph1}>
-                                <div className={styles.CohortGraphText}>Fund & Launch</div>
-                                <div className={styles.CohortGraph2Line}>
-                                    <div className={styles.CohortGraph2Linecircle}></div>
-                                    <div className={styles.CohortGraph2smallLine}></div>
+                    <div className={styles.ForSection1}>
+                        <div className={styles.ForSection1Discription}>
+                            <p>
+                                Join Tavastra's immersive 3-month residency program. Master startup essentials with expert mentorship and a structured curriculum, build your MVP with full-stack support, and connect with investors. Plus, a monthly stipend to fuel your focus.
+                            </p>
+                        </div>
+                        <div className={styles.ForSection2}>
+                            <h1>For Founders</h1>
+                        </div>
+                    </div>
+                </div>
+                {/* -------------ForSection end--------------------------------------------------------------------------------------------------------------------------------- */}
+
+                <div className={styles.midSection}>
+                    {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
+                    <div className={styles.Cohort}>
+                        <div className={styles.CohortBTN}>
+                            <button>Know more</button>
+                        </div>
+                        <div className={styles.CohortGraph}>
+                            {[...Array(4)].map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`${styles.CohortGraph1} ${activeIndex === index ? styles.active : ""}`}
+                                >
+                                    <div className={styles.CohortGraphText}>Fund & Launch</div>
+                                    <div className={styles.CohortGraph2Line}>
+                                        <div className={styles.CohortGraph2Linecircle}></div>
+                                        <div className={styles.CohortGraph2smallLine}></div>
+                                    </div>
+                                    <div className={styles.CohortGraphText}>Share and scale.</div>
                                 </div>
-                                <div className={styles.CohortGraphText}>Share and scale.</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                            ))}
+                        </div>
 
-                {/* -------------TimeLineBar Section--------------------------------------------------------------------------------------------------------------------------------- */}
-                {/* <div className={styles.TimeLineBar}>
+
+                    </div>
+
+                    {/* -------------TimeLineBar Section--------------------------------------------------------------------------------------------------------------------------------- */}
+                    {/* <div className={styles.TimeLineBar}>
                     <div className={styles.TimeLineBarHead}>
                         <h1>Tavastra</h1>
                     </div>
                 </div> */}
-            </div>
-              <div className={styles.BackendbyHead}>
-                    <h1>Backed by</h1>
                 </div>
+            </div>
+
+
+
+            <div className={styles.BackendbyHead}>
+                <h1>Backed by</h1>
+            </div>
 
             {/* -------------BackedBy Section--------------------------------------------------------------------------------------------------------------------------------- */}
             <div className={styles.Backendby}>
@@ -293,7 +354,7 @@ export default function Home() {
                 </div> */}
             </div>
         </div>
-       
+
 
     );
 }
