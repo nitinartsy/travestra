@@ -624,16 +624,10 @@
 /* travestra  start */
 
 
-.container {
+/* .container {
   max-width: 1017px;
   margin: auto;
 
-}
-
-.heading {
-  /* width: 1217px; */
-  /* height: 340px; */
-  /* top: 2124px; */
 }
 
 .heading h1 {
@@ -658,10 +652,7 @@
 }
 
 .TimeLineBarmain {
-  /* border: 1px solid green; */
   display: flex;
-  /* height: 100vh; */
-  /* width: 100vw; */
   margin-top: 100px;
 
 }
@@ -768,7 +759,6 @@
 }
 
 .TimeLineBarParagraph div {
-  /* width: 285px; */
   height: 64px;
   top: 2194px;
   gap: 0px;
@@ -777,7 +767,6 @@
 }
 
 .TimeLineBarParagraph1st {
-  /* width: 285px; */
   height: 64px;
   text-align: left;
 }
@@ -823,7 +812,7 @@
 .Ellipse span {
   position: absolute;
   left: -50px;
-}
+} */
 
 /* travestra end */
 
