@@ -648,13 +648,13 @@
     text-decoration-skip-ink: none;
     color: rgba(80, 178, 129, 1);
     }
-    /*
     
-.TimeLineBarmain {
-  display: flex;
-  margin-top: 100px;
-
-}
+    .TimeLineBarmain {
+      display: flex;
+      margin-top: 100px;
+      
+      }
+      /*
 
 
 .TimeLineBarEllipse {
