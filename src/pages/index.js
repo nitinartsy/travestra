@@ -10,7 +10,6 @@ const index = () => {
     <>
       <BgWrapper>
          <Home/> 
-        
       </BgWrapper>
     </>
   )

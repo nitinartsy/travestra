@@ -279,7 +279,8 @@ export default function Home() {
 
 
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
-            <div ref={containerRef} >
+            {/* <div ref={containerRef} > */}
+            <div>
                 <div className={styles.ForSection}>
                     <div className={styles.ForSection1Navbar}>
                         <div>
