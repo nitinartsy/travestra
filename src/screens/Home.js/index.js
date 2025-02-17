@@ -254,8 +254,7 @@ export default function Home() {
 
 
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
-            <div ref={containerRef} >
-                <div className={styles.midSection}>
+            <div >
                 <div className={styles.ForSection}>
                     <div className={styles.ForSection1Navbar}>
                         <div>
@@ -276,6 +275,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <div  ref={containerRef} className={styles.midSection}>
                     {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
                     <div className={styles.Cohort}>
                         <div className={styles.CohortBTN}>

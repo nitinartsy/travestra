@@ -6,10 +6,6 @@
 
 
 
-html {
-  scroll-behavior: smooth;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #282B28;
@@ -20,7 +16,7 @@ html {
 
 body {
   background-color: rgba(40, 43, 40, 1);
-  scroll-behavior: smooth;
+
   cursor: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%23D9D9D9'/%3E%3C/svg%3E"), auto !important;
 }
 
@@ -34,7 +30,6 @@ body {
   overflow-x: hidden;
   background-color: #282B28;
   max-width: 1440px;
-  scroll-behavior: smooth;
   margin: auto;
 }
 
