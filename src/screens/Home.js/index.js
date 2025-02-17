@@ -255,8 +255,8 @@ export default function Home() {
 
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
             <div ref={containerRef} >
-                <div className={styles.ForSection}>
-                    <div className={styles.ForSection1Navbar}>
+                <div className="ForSection">
+                    <div className="ForSection1Navbar">
                         <div>
                             <p>For Founders</p>
                         </div>
@@ -264,13 +264,13 @@ export default function Home() {
                             <p>For Angels</p>
                         </div>
                     </div>
-                    <div className={styles.ForSection1}>
-                        <div className={styles.ForSection1Discription}>
+                    <div className="ForSection1">
+                        <div className="ForSection1Discription">
                             <p>
                                 Join Tavastra's immersive 3-month residency program. Master startup essentials with expert mentorship and a structured curriculum, build your MVP with full-stack support, and connect with investors. Plus, a monthly stipend to fuel your focus.
                             </p>
                         </div>
-                        <div className={styles.ForSection2}>
+                        <div className="ForSection2">
                             <h1>For Founders</h1>
                         </div>
                     </div>
