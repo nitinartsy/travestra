@@ -84,23 +84,13 @@ a {
 
 
 
-.ForSection {
-  /* border: 1px solid red; */
+/* .ForSection {
   color: rgba(255, 255, 255, 1);
-  /* margin-top: 80px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
 }
 
 .ForSection1Navbar {
   display: flex;
-  /* align-items:center ; */
-  /* justify-content: space-between; */
-
-  /* width: 121px; */
   height: 27px;
-  /* top: 1052px; */
   margin-left: 180px;
   gap: 60px;
   opacity: 0px;
@@ -119,9 +109,6 @@ a {
 }
 
 .ForSection1Navbar div {
-  /* width: 100px; */
-  /* margin-left: 50px; */
-
 }
 
 .ForSection1Navbar div:nth-child(1) {
@@ -155,7 +142,7 @@ a {
   -webkit-text-decoration-skip-ink: none;
   color: rgba(80, 178, 129, 1);
   margin-right: -110px;
-}
+} */
 
 
 /* home page css end  */
