@@ -854,5 +854,34 @@
   font-size: 20px;
   line-height: 26.52px;
   letter-spacing: 0%;
-  
+
 }
+
+
+
+.ForSection1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 1017px;
+  margin: auto;
+}
+
+
+.ForSection1Discription p {
+  /* font-family: Test Söhne; */
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21.22px;
+  letter-spacing: 0%;
+  max-width: 367px;
+}
+
+.for_founder {
+  font-weight: 500;
+  font-size: 96px !important;
+  line-height: 187.52px;
+  letter-spacing: 0%;
+  color: #50B281;
+}
+

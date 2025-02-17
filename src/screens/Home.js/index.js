@@ -264,15 +264,15 @@ export default function Home() {
                             <p>For Angels</p>
                         </div>
                     </div>
-                    <div className="ForSection1">
-                        <div className="ForSection1Discription">
+                    <div className={styles.ForSection1}>
+                        <div className={styles.ForSection1Discription}>
                             <p>
                                 Join Tavastra's immersive 3-month residency program. Master startup essentials with expert mentorship and a structured curriculum, build your MVP with full-stack support, and connect with investors. Plus, a monthly stipend to fuel your focus.
                             </p>
                         </div>
-                        <div className="ForSection2">
-                            <h1>For Founders</h1>
-                        </div>
+                        
+                            <h1 className={styles.for_founder}>For Founders</h1>
+                        
                     </div>
                 </div>
                 <div className={styles.midSection}>
