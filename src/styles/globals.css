@@ -64,8 +64,7 @@ a {
 }
 
 
-.primary_btn 
-{
+.primary_btn {
   background: #50B281;
   padding: 10px 30px;
   border: none;
@@ -143,6 +142,35 @@ a {
   color: rgba(80, 178, 129, 1);
   margin-right: -110px;
 } */
+
+
+
+.ForSection1Navbar {
+  display: flex;
+  max-width: 1017px;
+  margin: auto;
+  gap: 60px;
+}
+
+.founder {
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+  border-bottom: 2px solid white;
+  padding-bottom: 6px;
+}
+
+
+.angels {
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+  
+}
 
 
 /* home page css end  */

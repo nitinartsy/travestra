@@ -257,10 +257,10 @@ export default function Home() {
             <div ref={containerRef} >
                 <div className="ForSection">
                     <div className="ForSection1Navbar">
-                        <div>
+                        <div className="founder">
                             <p>For Founders</p>
                         </div>
-                        <div>
+                        <div className="angels">
                             <p>For Angels</p>
                         </div>
                     </div>
