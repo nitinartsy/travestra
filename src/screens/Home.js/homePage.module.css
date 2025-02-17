@@ -624,33 +624,32 @@
 /* travestra  start */
 
 
-/* .container {
+ .container {
   max-width: 1017px;
   margin: auto;
 
 }
-
 .heading h1 {
   font-weight: 500;
   font-size: 128px;
   line-height: 169.73px;
   letter-spacing: 0%;
   color: rgba(80, 178, 129, 1);
-}
-
-.TimeLineBar {}
-
-.TimeLineBarHead h1 {
-
-  font-size: 128px;
-  font-weight: 500;
-  line-height: 169.73px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: rgba(80, 178, 129, 1);
-}
-
+  }
+  
+  
+  .TimeLineBarHead h1 {
+    
+    font-size: 128px;
+    font-weight: 500;
+    line-height: 169.73px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(80, 178, 129, 1);
+    }
+    /*
+    
 .TimeLineBarmain {
   display: flex;
   margin-top: 100px;
