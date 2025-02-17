@@ -256,11 +256,11 @@ export default function Home() {
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
             <div ref={containerRef} >
                 <div className="ForSection">
-                    <div className="ForSection1Navbar">
-                        <div className="founder">
+                    <div className={styles.ForSection1Navbar}>
+                        <div className={styles.founder}>
                             <p>For Founders</p>
                         </div>
-                        <div className="angels">
+                        <div className={styles.angels}>
                             <p>For Angels</p>
                         </div>
                     </div>

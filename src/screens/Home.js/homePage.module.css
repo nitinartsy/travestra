@@ -826,3 +826,33 @@
 }
 
 /* travestra end */
+
+
+
+
+.ForSection1Navbar {
+  display: flex;
+  max-width: 1017px;
+  margin: auto;
+  gap: 60px;
+}
+
+.founder {
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+  border-bottom: 2px solid white;
+  padding-bottom: 6px;
+}
+
+
+.angels {
+  /* font-family: Test Söhne; */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26.52px;
+  letter-spacing: 0%;
+  
+}
