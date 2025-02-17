@@ -1,9 +1,10 @@
 .HeroSection {
   height: 100%;
-  width: 100%;
   display: flex;
   align-items: flex-end;
   margin-bottom: 75px;
+  max-width: 1017px;
+  margin: auto;
 }
 
 .HeroSectionpart1 {
@@ -26,14 +27,14 @@
   width: 464px;
   height: 280px;
   margin-top: -9px;
-  margin-left: 9px;
+  margin-left: -123px;
   gap: 0px;
 }
 
 .HeroSectionpart1 h1 {
   /* position: absolute; */
   /* position: relative; */
-  font-family: Test SÃ¶hne;
+  /* font-family: Test SÃ¶hne; */
   font-size: 36px;
   font-weight: 400;
   line-height: 47.74px;
@@ -42,18 +43,17 @@
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   color: rgba(255, 255, 255, 1);
-  width: 306px;
+  width: 100%;
   height: 48px;
   margin-top: 21px;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 
 .HeroSectionpart1 p {
-  width: 479px;
+  width: 499px;
   height: 81px;
   margin-top: 33px;
-  margin-left: 91px;
-  font-family: Test SÃ¶hne;
+  /* font-family: Test SÃ¶hne; */
   font-size: 20px;
   font-weight: 300;
   line-height: 26.52px;
@@ -119,7 +119,7 @@
 .Logo {
   width: 1827px;
   height: 243px;
-
+  margin-top: 78px;
   color: rgba(80, 178, 129, 1);
   font-size: 100px;
   padding-left: 45px;
@@ -135,7 +135,7 @@
 .ForSection {
   /* border: 1px solid red; */
   color: rgba(255, 255, 255, 1);
-  margin-top: 80px;
+  /* margin-top: 80px; */
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
@@ -258,21 +258,21 @@
 .CohortGraph {
   /* border: 1px solid yellow; */
   width: 65vw;
-  
+
 }
------------------------
-.CohortGraph1 {
+
+----------------------- .CohortGraph1 {
   height: 85px;
   width: 400px;
   border: 1px solid yellow;
-  
+
   color: rgba(255, 255, 255, 1);
 
 }
 
 .CohortGraph1:nth-child(1) {
   margin-left: 455px;
-  
+
 }
 
 .CohortGraph1:nth-child(2) {
@@ -325,14 +325,15 @@
 }
 
 .active .CohortGraph2smallLine {
-  background-color: rgba(255, 255, 255, 1) !important; 
+  background-color: rgba(255, 255, 255, 1) !important;
 }
 
 .active .CohortGraph2Linecircle {
-  border-color:  rgba(80, 178, 129, 1) !important;
+  border-color: rgba(80, 178, 129, 1) !important;
 }
-.active .CohortGraphText{
-  color: rgba(255, 255, 255, 1) !important; 
+
+.active .CohortGraphText {
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 /* ---------------------------- */
@@ -352,7 +353,7 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  
+
 
 }
 
@@ -578,7 +579,7 @@
   /* align-items: center; */
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .imageGridDiv img:nth-child(1) {}
@@ -605,7 +606,7 @@
 .gallery {
   display: flex;
   flex-direction: column;
-  width: 536px;
+  width: 707px;
 }
 
 .imageGridRow {}
@@ -628,7 +629,7 @@
 }
 
 .imageGri3 {
-  gap: 60px;
+  gap: 150px;
 }
 
 .imageGri2 {}
@@ -650,15 +651,14 @@
   position: fixed;
   top: 0;
   /* border: 2px solid red; */
-  left: 267px;
+  left: 170px;
   width: 100%;
   margin: auto;
   /* max-width: 767px; */
   z-index: 0;
   /* background-color: white; */
   /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
-  transition: all 30000s ease-in-out;
-
+  transition: all 30000sease-in-out;
 }
 
 
@@ -666,3 +666,236 @@
 .hidebackedBy {
   padding-top: 300px;
 }
+
+
+.company_name_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+.company_name_container .dot {
+  width: 9px;
+  height: 9px;
+  background: #50B281;
+  border-radius: 100px;
+}
+
+.name {
+  /* font-family: Test Söhne; */
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31.82px;
+  letter-spacing: 0%;
+  padding-left: 0px;
+  text-align: left;
+}
+
+
+
+/* travestra  start */
+
+
+.container {
+  max-width: 1017px;
+  margin: auto;
+
+}
+
+.heading {
+  /* width: 1217px; */
+  /* height: 340px; */
+  /* top: 2124px; */
+}
+
+.heading h1 {
+  font-weight: 500;
+  font-size: 128px;
+  line-height: 169.73px;
+  letter-spacing: 0%;
+  color: rgba(80, 178, 129, 1);
+}
+
+.TimeLineBar {}
+
+.TimeLineBarHead h1 {
+
+  font-size: 128px;
+  font-weight: 500;
+  line-height: 169.73px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(80, 178, 129, 1);
+}
+
+.TimeLineBarmain {
+  /* border: 1px solid green; */
+  display: flex;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  margin-top: 100px;
+
+}
+
+
+.TimeLineBarEllipse {
+  width: 30px;
+  height: auto;
+  margin-left: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.EllipseActive {}
+
+
+.TimeLineBarEllipse .EllipseActive {
+  width: 18px;
+  height: 18px;
+  z-index: 232132213;
+  position: relative;
+  background: #50B281;
+  border-radius: 100px;
+}
+
+.TimeLineBarEllipse .Ellipse {
+  width: 14px;
+  height: 14px;
+  z-index: 232132213;
+  position: relative;
+  background: #767676 !important;
+  border-radius: 100px;
+  margin-left: 2px;
+
+}
+
+.TimeLineBarEllipse div:nth-child(2) {
+  margin-top: 450px;
+}
+
+.TimeLineBarEllipse div:nth-child(3) {
+  margin-top: 100px;
+}
+
+.TimeLineBarEllipse div:nth-child(4) {
+  margin-top: 110px;
+}
+
+.TimeLineBarEllipse div:nth-child(5) {
+  margin-top: 90px;
+}
+
+.TimeLineBarEllipse div:nth-child(6) {
+  margin-top: 105px;
+}
+
+.verticalline {
+  height: 980px;
+  border: 1px solid rgba(118, 118, 118, 1);
+  margin-left: -22px;
+}
+
+.TimeLineBarParagraph {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  top: 2194px;
+  margin-left: 60px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.TimeLineBarParagraph:nth-child(2) {
+  margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(3) {
+  margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(4) {
+  margin-top: 50px;
+}
+
+.TimeLineBarParagraph:nth-child(5) {
+  margin-top: 40px;
+}
+
+.TimeLineBarParagraph:nth-child(6) {
+  margin-top: 40px;
+
+}
+
+.TimeLineBarParagraph:nth-child(7) {
+  margin-top: 40px;
+}
+
+.TimeLineBarImg {
+  width: 435px;
+  height: 334px;
+  top: 2661px;
+  margin-left: 60px;
+
+}
+
+.TimeLineBarParagraph div {
+  /* width: 285px; */
+  height: 64px;
+  top: 2194px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.TimeLineBarParagraph1st {
+  /* width: 285px; */
+  height: 64px;
+  text-align: left;
+}
+
+.TimeLineBarParagraph1st p {
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 31.82px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #767676;
+}
+
+.TimeLineBarParagraph2nd {
+  margin-left: 145px;
+  width: 420px;
+  height: 63px;
+  text-align: left;
+}
+
+.TimeLineBarParagraph2nd p {
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.22px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #767676;
+}
+
+
+.timeline_active p {
+  color: white;
+}
+
+
+.EllipseActive span {
+  position: absolute;
+  left: -50px;
+}
+
+.Ellipse span {
+  position: absolute;
+  left: -50px;
+}
+
+/* travestra end */

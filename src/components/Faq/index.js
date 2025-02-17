@@ -44,37 +44,37 @@ const options = [
   {
     title: "Application Process",
     accordions: [
-      { id: 1, heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
-      { id: 2, heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
-      { id: 3, heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
-      { id: 4, heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
+      { id: "01", heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
+      { id: "02", heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
+      { id: "03", heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
+      { id: "04", heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
     ],
   },
   {
     title: "Program logistics",
     accordions: [
-      { id: 1, heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
-      { id: 2, heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
-      { id: 3, heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
-      { id: 4, heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
+      { id: "01", heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
+      { id: "02", heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
+      { id: "03", heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
+      { id: "04", heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
     ],
   },
   {
     title: "Residency Life",
     accordions: [
-      { id: 1, heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
-      { id: 2, heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
-      { id: 3, heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
-      { id: 4, heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
+      { id: "01", heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
+      { id: "02", heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
+      { id: "03", heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
+      { id: "04", heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
     ],
   },
   {
     title: "Post Program and Others",
     accordions: [
-      { id: 1, heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
-      { id: 2, heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
-      { id: 3, heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
-      { id: 4, heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
+      { id: "01", heading: "Accordion 1", content: "Content for Option 2, Accordion 1" },
+      { id: "02", heading: "Accordion 2", content: "Content for Option 2, Accordion 2" },
+      { id: "03", heading: "Accordion 3", content: "Content for Option 2, Accordion 3" },
+      { id: "04", heading: "Accordion 4", content: "Content for Option 2, Accordion 4" },
     ],
   },
 ];

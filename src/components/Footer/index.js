@@ -68,7 +68,7 @@ const Footer = ({Ref}) => {
                 </div>
                 <div className={styles.Footer_text}>
                     <h1>
-                        Let’s Build
+                        Let’s&nbsp;Build
                     </h1>
                 </div>
             </div>

@@ -27,9 +27,8 @@
     max-width: 1017px;
     margin: 70px auto;
     /* font-family: Test Söhne; */
-font-weight: 300;
-font-size: 16px;
-line-height: 21.22px;
-letter-spacing: 0%;
-
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21.22px;
+    letter-spacing: 0%;
 }

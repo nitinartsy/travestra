@@ -69,8 +69,8 @@ const Contact = () => {
         <Navbar />
         <div className={styles.contact_info}>
           <div>
-          <p>Email-sample@mail.com</p>
-          <p>Phone-91-XXXXXXXXXX</p>
+            <p>Email-sample@mail.com</p>
+            <p>Phone-91-XXXXXXXXXX</p>
           </div>
         </div>
         <div className={styles.HeroSection}>

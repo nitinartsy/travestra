@@ -45,6 +45,8 @@ const Navbar = () => {
         router.push('/for_founders')
     }
 
+
+
     return (
         <>
             <div className={styles['navbar-main']}>

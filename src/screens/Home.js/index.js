@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./home.module.css";
 import { useEffect, useRef, useState } from "react";
+import Unique from "@/components/Unique";
 
 
 let gsap, ScrollTrigger, SplitType;
@@ -26,30 +27,30 @@ export default function Home() {
     const containerRef = useRef(null);
 
     useEffect(() => {
-     
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: "35% 60%", // Element ka 25% point, viewport ke 70% point par trigger hoga
-        end: "80% 20%",
-        // markers:true,
-        end: "+=900", 
-        pin: true, 
-        scrub: 5,
-      });
 
-      const elements = gsap.utils.toArray(`.${styles.CohortGraph1}`);
-    
-      elements.forEach((el) => {
-        
         ScrollTrigger.create({
-          trigger: el,
-          start: "50% 5%",
-          toggleActions: "play none none reverse",
-          scrub: 5,
-          onEnter: () => el.classList.add(styles.active),  
-          onLeaveBack: () => el.classList.remove(styles.active) 
+            trigger: containerRef.current,
+            start: "15% 23%", // Element ka 25% point, viewport ke 70% point par trigger hoga
+            end: "80% 20%",
+            // markers:true,
+            end: "+=900",
+            pin: true,
+            scrub: 5,
         });
-      });
+
+        const elements = gsap.utils.toArray(`.${styles.CohortGraph1}`);
+
+        elements.forEach((el) => {
+
+            ScrollTrigger.create({
+                trigger: el,
+                start: "50% 5%",
+                toggleActions: "play none none reverse",
+                scrub: 5,
+                onEnter: () => el.classList.add(styles.active),
+                onLeaveBack: () => el.classList.remove(styles.active)
+            });
+        });
 
     }, []);
 
@@ -276,57 +277,205 @@ export default function Home() {
                 </h1>
             </div>
 
+
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
-            <div className={styles.ForSection}>
-                <div className={styles.ForSection1Navbar}>
-                    <div>
-                        <p>For Founders</p>
+            <div ref={containerRef} >
+                <div className={styles.ForSection}>
+                    <div className={styles.ForSection1Navbar}>
+                        <div>
+                            <p>For Founders</p>
+                        </div>
+                        <div>
+                            <p>For Angels</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>For Angels</p>
+                    <div className={styles.ForSection1}>
+                        <div className={styles.ForSection1Discription}>
+                            <p>
+                                Join Tavastra's immersive 3-month residency program. Master startup essentials with expert mentorship and a structured curriculum, build your MVP with full-stack support, and connect with investors. Plus, a monthly stipend to fuel your focus.
+                            </p>
+                        </div>
+                        <div className={styles.ForSection2}>
+                            <h1>For Founders</h1>
+                        </div>
                     </div>
                 </div>
-                <div className={styles.ForSection1}>
-                    <div className={styles.ForSection1Discription}>
-                        <p>
-                            Join Tavastra's immersive 3-month residency program. Master startup essentials with expert mentorship and a structured curriculum, build your MVP with full-stack support, and connect with investors. Plus, a monthly stipend to fuel your focus.
-                        </p>
-                    </div>
-                    <div className={styles.ForSection2}>
-                        <h1>For Founders</h1>
-                    </div>
-                </div>
-            </div>
-            {/* -------------ForSection end--------------------------------------------------------------------------------------------------------------------------------- */}
-
-            <div ref={containerRef} className={styles.midSection}>
-                {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
-                <div  className={styles.Cohort}>
-                    <div className={styles.CohortBTN}>
-                        <button>Know more</button>
-                    </div>
-                    <div  className={styles.CohortGraph}>
-                        {[...Array(4)].map((_, index) => (
-                            <div key={index} className={styles.CohortGraph1}>
-                                <div className={styles.CohortGraphText}>Fund & Launch</div>
-                                <div className={styles.CohortGraph2Line}>
-                                    <div className={styles.CohortGraph2Linecircle}></div>
-                                    <div className={styles.CohortGraph2smallLine}></div>
+                <div className={styles.midSection}>
+                    {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
+                    <div className={styles.Cohort}>
+                        <div className={styles.CohortBTN}>
+                            <button>Know more</button>
+                        </div>
+                        <div className={styles.CohortGraph}>
+                            {[...Array(4)].map((_, index) => (
+                                <div key={index} className={styles.CohortGraph1}>
+                                    <div className={styles.CohortGraphText}>Fund & Launch</div>
+                                    <div className={styles.CohortGraph2Line}>
+                                        <div className={styles.CohortGraph2Linecircle}></div>
+                                        <div className={styles.CohortGraph2smallLine}></div>
+                                    </div>
+                                    <div className={styles.CohortGraphText}>Share and scale.</div>
                                 </div>
-                                <div className={styles.CohortGraphText}>Share and scale.</div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                {/* -------------TimeLineBar Section--------------------------------------------------------------------------------------------------------------------------------- */}
-                {/* <div className={styles.TimeLineBar}>
+                    {/* -------------TimeLineBar Section--------------------------------------------------------------------------------------------------------------------------------- */}
+                    {/* <div className={styles.TimeLineBar}>
                     <div className={styles.TimeLineBarHead}>
                         <h1>Tavastra</h1>
                     </div>
                 </div> */}
+                </div>
             </div>
 
+
+            {/* travestra  */}
+            <div className={styles.container}>
+                <div className={styles.heading}>
+                    <h1>Tavastra </h1>
+                </div>
+
+                <div className={styles.TimeLineBar}>
+
+
+                    {/* ------------------------------------ */}
+                    <div className={styles.TimeLineBarmain}>
+
+
+                        <div className={styles.TimeLineBarEllipse}>
+                            <div className={`${styles.EllipseActive}`}>
+                                <span>01</span>
+                            </div>
+                            <div className={styles.Ellipse}>
+                                <span>02</span>
+                            </div>
+                            <div className={styles.Ellipse}>
+                                <span>03</span>
+                            </div>
+                            <div className={styles.Ellipse}>
+                                <span>04</span>
+                            </div>
+                            <div className={styles.Ellipse}>
+                                <span>05</span>
+                            </div>
+                            <div className={styles.Ellipse}>
+                                <span>06</span>
+                            </div>
+
+                        </div>
+
+                        <div className={styles.verticalline} ></div>
+
+                        <div>
+
+
+
+                            <div className={styles.TimeLineBarParagraph} >
+
+                                <div className={`${styles.timeline_active} ${styles.TimeLineBarParagraph1st}`}>
+                                    <p>
+                                        World's first fully residential accelerator
+                                    </p>
+                                </div>
+
+                                <div className={`${styles.timeline_active} ${styles.TimeLineBarParagraph2nd}`}>
+                                    <p>
+                                        Live and learn in a fully immersive environment dedicated to building your startup.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className={styles.TimeLineBarImg}>
+                                <img src='/unique.svg' alt='Unique' />
+                            </div>
+                            <div className={styles.TimeLineBarParagraph} >
+
+                                <div className={styles.TimeLineBarParagraph1st}>
+                                    <p>
+                                        Essential Pillars of Entrepreneurship
+                                    </p>
+                                </div>
+
+                                <div className={styles.TimeLineBarParagraph2nd}>
+                                    <p>
+                                        Learn Lean Startup, Design Thinking, Agile Development, and Growth Hacking in an immersive startup residency.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className={styles.TimeLineBarParagraph} >
+
+                                <div className={styles.TimeLineBarParagraph1st}>
+                                    <p>
+                                        Essential Pillars of Entrepreneurship
+                                    </p>
+                                </div>
+
+                                <div className={styles.TimeLineBarParagraph2nd}>
+                                    <p>
+                                        Learn Lean Startup, Design Thinking, Agile Development, and Growth Hacking in an immersive startup residency.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className={styles.TimeLineBarParagraph} >
+
+                                <div className={styles.TimeLineBarParagraph1st}>
+                                    <p>
+                                        Essential Pillars of Entrepreneurship
+                                    </p>
+                                </div>
+
+                                <div className={styles.TimeLineBarParagraph2nd}>
+                                    <p>
+                                        Learn Lean Startup, Design Thinking, Agile Development, and Growth Hacking in an immersive startup residency.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div className={styles.TimeLineBarParagraph} >
+
+                                <div className={styles.TimeLineBarParagraph1st}>
+                                    <p>
+                                        Chance to Co-create Your Startup Vision
+                                    </p>
+                                </div>
+
+                                <div className={styles.TimeLineBarParagraph2nd}>
+                                    <p>
+                                        Get 360 degree full stack support across ideation, branding, legal, tech, strategy, and fundraising to bring your idea to life.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div className={styles.TimeLineBarParagraph} >
+
+                                <div className={styles.TimeLineBarParagraph1st}>
+                                    <p>
+                                        Ongoing Support and Community
+                                    </p>
+                                </div>
+
+                                <div className={styles.TimeLineBarParagraph2nd}>
+                                    <p>
+                                        Benefit from 15 months of guidance (3 months residency + 12 months extended support), resources, and a thriving network.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    {/* ---------------------------------------- */}
+
+                </div>
+
+
+            </div>
 
             {/* -------------BackedBy Section--------------------------------------------------------------------------------------------------------------------------------- */}
             <div className={styles.Backendby}>
@@ -345,10 +494,12 @@ export default function Home() {
                             >
                                 {row.map((item, imgIndex) => (
                                     <div key={imgIndex} className={styles.imageGridDiv}>
-                                        <span className={styles.company}>{item.company}</span>
+                                        <div className={styles.company_name_container}>
+                                            <span className={styles.dot}></span>
+                                            <span className={styles.company}>{item.company}</span>
+                                        </div>
                                         <img src={item.src} className={styles.gridImage} alt={item.name} />
                                         <span className={styles.name}>{item.name}</span>
-
                                     </div>
                                 ))}
                             </div>

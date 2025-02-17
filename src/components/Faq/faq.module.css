@@ -1,11 +1,20 @@
 .HeroSection {
     height: 100%;
     display: flex;
-    max-width: 1120px;
+    max-width: 1017px;
     /* align-items: flex-start; */
     margin-bottom: 147px;
     justify-content: space-between;
-    padding-top: 525px;
+    padding-top: 315px;
+    margin: auto;
+
+    /* background-image: url(/faqImg.svg); */
+    background-repeat: no-repeat;
+    background-size: 40%; /* Adjust percentage for size */
+    background-position: left top;
+    width: 100vw; /* Full viewport width */
+    /* height: 100vh;  */
+
 }
 
 
@@ -30,7 +39,7 @@
 /* Container for the main content */
 .container {
     max-width: 1017px;
-    margin: auto;
+    margin: 147px auto;
 }
 
 
@@ -49,6 +58,7 @@
     font-weight: 500;
     margin-bottom: -40px;
     margin-top: -40px;
+    margin-left: -145px;
 }
 
 .HeroSectionpart2 {

@@ -1,9 +1,13 @@
 .footer_main_container {
     margin-top: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .Footer_text h1 {
-    font-size: 260px;
+    font-size: 312px;
     font-weight: normal;
     color: #50B281;
 }
@@ -13,26 +17,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    gap: 50px;
+    gap: 188px;
 }
 
 
 .Footer_links ul {
     list-style-type: none;
+    text-align: right;
 }
 
 .Footer_links li {
     margin-bottom: 20px;
 }
 
-.star_clas{
-  position: relative;
+.star_clas {
+    position: relative;
 }
+
 .star_clasMain {
     position: relative;
 }
 
-.star_clasMain svg{
+.star_clasMain svg {
     position: absolute;
     right: -20px;
     top: -16px;
