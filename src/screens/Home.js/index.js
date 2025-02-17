@@ -306,15 +306,13 @@ export default function Home() {
 
 
             {/* travestra  */}
-            <div className={styles.container}>
+            {/* <div className={styles.container}>
                 <div className={styles.heading}>
                     <h1>Tavastra </h1>
                 </div>
 
                 <div className={styles.TimeLineBar}>
 
-
-                    {/* ------------------------------------ */}
                     <div className={styles.TimeLineBarmain}>
 
 
@@ -445,12 +443,11 @@ export default function Home() {
 
                     </div>
 
-                    {/* ---------------------------------------- */}
 
                 </div>
 
 
-            </div>
+            </div> */}
 
             {/* -------------BackedBy Section--------------------------------------------------------------------------------------------------------------------------------- */}
             <div className={styles.Backendby}>
