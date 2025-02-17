@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./home.module.css";
+import styles from './homePage.module.css'
 import { useEffect, useRef, useState } from "react";
 import Unique from "@/components/Unique";
 
@@ -254,7 +254,7 @@ export default function Home() {
 
 
             {/* -------------ForSection start--------------------------------------------------------------------------------------------------------------------------------- */}
-            <div >
+            <div ref={containerRef} >
                 <div className={styles.ForSection}>
                     <div className={styles.ForSection1Navbar}>
                         <div>
@@ -275,7 +275,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div  ref={containerRef} className={styles.midSection}>
+                <div className={styles.midSection}>
                     {/* -------------Cohort Section--------------------------------------------------------------------------------------------------------------------------------- */}
                     <div className={styles.Cohort}>
                         <div className={styles.CohortBTN}>
